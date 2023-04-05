@@ -87,17 +87,17 @@ function compare(event) {
             createDiv.textContent = "!!! Wrong !!! the correct answer is: " + questions[questionsIndex].answer;
         }
     }
-}
 
-questionsIndex++;
+    questionsIndex++;
 
-if (questionsIndex >= questions.length) {
-    allDone();
-    createDiv.textContent = "!!! You did it !!!" + "" + "Your got " + score + "/" + questions.length + " Correct.";
-} else {
-    render(questionsIndex);
+    if (questionsIndex >= questions.length) {
+        allDone();
+        createDiv.textContent = "!!! You did it !!!" + "" + "Your got " + score + "/" + questions.length + " Correct.";
+    } else {
+        render(questionsIndex);
+    }
+    questionsDiv.appendChild(createDiv);
 }
-questionsDiv.appendChild(createDiv);
 
 function allDone() {
     questionsDiv.innerHTML = "";
