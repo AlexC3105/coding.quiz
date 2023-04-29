@@ -12,7 +12,7 @@ var questions = [
     },
 
     {
-        title: "JavaScript Can Do:",
+        title: "What does JavaScript dgo:",
         choices: ["Animate Websites", "Make Phone Apps", "Invokes Functions", "All of the above"],
         answer: "All of the above"
     },
