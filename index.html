@@ -11,25 +11,36 @@
 </head>
 
 <body>
-
-    <a href="highscore.html">View Highscores</a>
-
-    <div id="wrapper">
-        <div id="currentTime"></div>
-
-        <div id="questionsDiv">
-            <h1>Coding Quiz</h1>
+    <header>
+        <button id="scorelink">View-HighScores</button>
+        <h3 id="timer"></h3>
+    </header>
+    <main>
+        <div id="starterContainer">
+            <h1 class="title">Coding Quiz</h1>
             <p>Try to answer these coding related questions within the posted time limit. Keep in mind that wrong
                 answers will penalize your score and deduct 10 seconds of the time.
             </p>
-            <ul id="choisesUl"></ul>
-            <button id="startTime">Start-Quiz</button>
+            <button id="start">Start-Quiz</button>
         </div>
-
-    </div>
-
-    <script src="./assets/JS/script.js"></script>
-
+        <div id="quizContainer" class="hidden">
+            <div id="answerButton">
+                <button class="option" id="option1">Option.1</button>
+                <button class="option" id="option2">Option.2</button>
+                <button class="option" id="option3">Option.3</button>
+                <button class="option" id="option4">Option.4</button>
+            </div>
+        </div>
+        <div id="initials" class="hidden">
+            <p id="score"></p><input id="initialInput" type="text"><button id="goback">Go-Back</button><button
+                id="initialButton">View-HighScores</button>
+        </div>
+        <div id="highscore" class="hidden">
+            <h1 id="scoretitle">HighScores</h1>
+            <div id="allscores"></div>
+        </div>
+    </main>
+    <script src="./Main/assets/JS/script.js"></script>
 </body>
 
 </html>
