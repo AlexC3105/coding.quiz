@@ -1,102 +1,46 @@
-header {
+.flex-row {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-inline: 7px;
     justify-content: center;
 }
-h1 {
-    margin-top: 7%;
-}
-main, div {
+
+.flex-column {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
+    gap: 18px;
 }
-button#start {
-    margin: 15px;
-    border-radius: 15px;
-    width: 230px;
-    height: 45px;
-    cursor: pointer;
-}
-div#quizContainer {
-    margin-top: 50px;
-}
-button.option {
-    margin: 10px;
-    width: 230px;
-    height: 45px;
-    border-radius: 15px;
-    color: aqua;
-    background-color: aliceblue;
-    font-weight: 600;
-}
-button:hover {
-    cursor: pointer;
-}
-div#allscores {
-    margin: 15px;
-    padding: 10px;
-    list-style: none;
-    border: solid 3px blue;
-    background-color: aliceblue;
-}
-ul {
-    padding: 10px;
-}
-li {
-    list-style: none;
-}
-#scorelink {
-    background: lightskyblue;
-    color: blue;
-    border: solid;
-}
-#subtitle {
-    text-align: center;
-    margin: 15px;
-}
-#question {
-    font-weight: bold;
-    font-size: x-large;
-}
-#start {
-    color: blue;
+
+button {
+    width: 350px;
+    height: 75px;
+    border-radius: 25px;
     background-color: aqua;
+    color: darkblue;
+    border: solid 3px darkblue;
+    font-size: xx-large;
 }
-#answerButton {
-    margin: 12px;
+
+form {
+    text-align: center;
 }
-#goback, #initialButton {
-    margin: 5px;
-    width: 130px;
-    height: 45px;
-    border-radius: 15px;
-    color: aqua;
-    background-color: aliceblue;
+
+main p {
+    width: 50%;
+    text-align: center;
 }
-#result {
-    margin: 10px;
-    padding-right: 10%;
-    padding: 10px;
-    border-top: solid grey 3px;
-    color: grey;
-    font-style: inherit;
+
+p {
+    font-size: 1.5rem;
 }
-#initialInput {
-    margin: 18px;
-    border: solid grey;
-    background-color: aliceblue;
+
+#choiceSelection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
-#score {
-    margin: 28px;
-    font-weight: 900;
-    font-size: large;
-}
-.hidden {
-    display: none;
+
+#scoreList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
