@@ -5,42 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Coding-Quiz</title>
 </head>
 
 <body>
-    <header>
-        <button id="scorelink">View-HighScores</button>
-        <h3 id="timer"></h3>
-    </header>
+    <div class="flex-row">
+        <a href="./highscores.html">
+            <p>View-HighScores</p>
+        </a>
+        <p id="timer">Your Time: </p>
+    </div>
     <main>
-        <div id="starterContainer">
-            <h1 class="title">Coding-Quiz</h1>
+        <div class="flex-column" id="questions">
+            <h1>Coding-Quiz</h1>
             <p>Try to answer these coding related questions within the posted time limit. Keep in mind that wrong
-                answers will penalize your score and deduct 10 seconds of the time.
-            </p>
-            <button id="start">Start-Quiz</button>
+                answers will penalize your score and deduct 10 seconds of the time.</p>
+            <button id="start-btn">Start-Quiz</button>
         </div>
-        <div id="quizContainer" class="hidden">
-            <div id="answerButton">
-                <button class="option" id="option1">Option.1</button>
-                <button class="option" id="option2">Option.2</button>
-                <button class="option" id="option3">Option.3</button>
-                <button class="option" id="option4">Option.4</button>
-            </div>
-        </div>
-        <div id="initials" class="hidden">
-            <p id="score"></p><input id="initialInput" type="text"><button id="goback">Go-Back</button><button
-                id="initialButton">View-HighScores</button>
-        </div>
-        <div id="highscore" class="hidden">
-            <h1 id="scoretitle">HighScores</h1>
-            <div id="allscores"></div>
-        </div>
+        <form action="./highscores.html" method="post" name="player" id="form">
+            <h4 id="final-score">Your Score: </h4>
+            <br>
+            <label for="initial-form">Please enter Your Initials: </label>
+            <input type="text" id="initial-form">
+            <input type="submit">
+        </form>
     </main>
-    <script src="./Main/assets/JS/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
