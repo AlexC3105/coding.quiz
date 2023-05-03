@@ -107,7 +107,7 @@ function endQuiz() {
     questionsDisplay.style.display = "none";
     timer.style.display = "none";
     form.style.display = "block";
-    score = (score >= 0 ? score = 0);
+    score = (score >= 0 ? score : 0);
     document.querySelector("#final-score").innerText = "Your Score is: " + score;
 }
 form.addEventListener("submit", (event) => {
